@@ -1,0 +1,163 @@
+html,body{
+  height: 100%;
+  color: white;
+  background-color: black;
+  margin: 0;
+}
+
+.gradient-text {
+  background: -moz-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,0,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+  background: linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px white;
+}
+
+.main {
+  text-align: center;
+}
+
+h2{
+  letter-spacing: 3px;
+}
+
+h3{
+  letter-spacing: 1.5px;
+}
+
+.social-media{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-css{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.project-container{
+width: 100%;
+height: 100%;
+background-color: black;
+}
+
+/* Down Arrow */
+
+.arrow-container{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+}
+
+.arrow-1{
+  width: 100px;
+  height: 100px;
+  background: -moz-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,0,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+  background: linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+  opacity: 0.5;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.arrow-2{
+  width: 60px;
+  height: 60px;
+  background: -moz-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,0,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+  background: linear-gradient(45deg, rgba(255,255,0,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  display: table;
+}
+
+.arrow-2:before{
+  width: 52px;
+  height: 52px;
+  content: "";
+  border: 2px solid #006064;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.arrow-2 i.fa{
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+}
+
+/* Custom Animate.css */
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.4, .4, .4);
+            transform: scale3d(.4, .4, .4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.4, .4, .4);
+            transform: scale3d(.4, .4, .4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+
+/* End Down Arrow */
